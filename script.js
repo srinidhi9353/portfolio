@@ -198,7 +198,7 @@ ${data.message}`);
         window.location.href = mailtoLink;
         
         // Show success message
-        showNotification('Opening your email client to send the message!', 'success');
+        showNotification('Please send the pre-filled email that opened in your email client to submit your message.', 'success');
         contactForm.reset();
         
     } catch (error) {
