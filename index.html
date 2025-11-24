@@ -1,0 +1,648 @@
+<!--
+    GitHub Pages Hosting Instructions:
+    1. Place your profile.jpg image in the 'images' folder
+    2. Commit and push all files to your GitHub repository
+    3. Go to your repository Settings > Pages
+    4. Select 'Deploy from a branch' and choose 'main' branch with '/root' folder
+    5. Click 'Save' - your site will be published at https://[your-username].github.io/[repository-name]/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinidhi - Software Development Engineer | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Srinidhi</h1>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#connect" class="nav-link">Connect</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="resume-btn" onclick="downloadResume()">
+                    <i class="fas fa-download"></i> Resume
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1 class="about-title">Hello, I'm <span class="gradient-text">Srinidhi</span></h1>
+                    <h2 class="about-role">Software Development Engineer</h2>
+                    <p class="about-tagline">Fast Learner | Tech Enthusiast</p>
+                    <p class="about-bio">
+                        Passionate Software Development Engineer with expertise in full-stack development, 
+                        problem-solving, and team leadership. I love building innovative solutions and 
+                        learning new technologies to create impactful software products.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ssrinidhi622@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9353170957</span>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <button class="btn btn-primary" onclick="downloadResume()">
+                            <i class="fas fa-download"></i> Download Resume
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                            Get In Touch
+                        </button>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="images/profile.jpg" alt="Srinidhi" class="profile-img">
+                        <div class="floating-badge badge-1">🚀 Fast Learner</div>
+                        <div class="floating-badge badge-2">💡 Innovator</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Passionate about technology with expertise across multiple domains</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C/C++</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML/CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Problem Solving</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Leadership</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Project Management</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcase of my development work and technical expertise</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://th.bing.com/th/id/R.6b5b392efa5f390903b30605b5643508?rik=V9eHKNj54DAeRg&riu=http%3a%2f%2fpossibly.github.io%2f2016%2f03%2fSchema-for-Content-Selection-Architectures%2fufo.png&ehk=Ztk3ZpruwRHQJLNc0r5L9c9yteqtcMjRpY41FosphTo%3d&risl=&pid=ImgRaw&r=0" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://algo-viz-one-dun.vercel.app" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/srinidhi9353/algorithm-visualizer" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI - Enhanced Algorithm Visualizer</h3>
+                        <p>Interactive Educational Platform to Visualize Algorithms and Data Structures with the features of AI ChatBot , AI Recommender , Gaming section to make learning easy.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Zustand</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://algo-viz-one-dun.vercel.app" class="btn btn-primary btn-sm" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/srinidhi9353/algorithm-visualizer" class="btn btn-secondary btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/89/b3/66/89b3669c-3b3e-b534-461e-e91da15da734/source/512x512bb.jpg" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://complete-the-word-game.netlify.app/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/srinidhi9353/complete_word_game" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Complete The Word Game</h3>
+                        <p>Complete the word is a multiplayer game where a user need to enter the players details and each players should enter an alphabet to form a word . The one who fails to complete the word will fail.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://complete-the-word-game.netlify.app/" class="btn btn-primary btn-sm" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/srinidhi9353/complete_word_game" class="btn btn-secondary btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://neilpatel.com/wp-content/uploads/2015/04/ecommerce.jpg" alt="Purchase Path Analyser">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/srinidhi9353/Purchase_path_analyser" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Purchase Path Analyser</h3>
+                        <p>E-commerce platform with customer shopping interface and admin dashboard featuring purchase path analysis capabilities, real-time analytics, and data visualization.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/srinidhi9353/Purchase_path_analyser" class="btn btn-secondary btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://img.freepik.com/premium-vector/cinema-ticket-booking-web-page-template-isometric-cinema-landing-page_80590-7191.jpg?w=740" alt="Movie Ticketing System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/srinidhi9353/movie-tticketing" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Full Stack Movie Ticketing</h3>
+                        <p>BookMyShow-inspired movie ticket booking platform with user authentication, movie listings, seat selection, and mock payment processing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/srinidhi9353/movie-tticketing" class="btn btn-secondary btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section certificates-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional certifications and achievements in technology</p>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card" onclick="openCertificate('AWS Cloud Practitioner Essentials', 'AWS Training and Certifications', '2025', 'https://github.com/srinidhi9353/certificates/blob/6905e400f020a312e13012f2187e8fa6916fb85a/Screenshot%202025-09-11%20182701.png')">
+                    <div class="certificate-image">
+                        <img src="https://github.com/srinidhi9353/certificates/blob/6905e400f020a312e13012f2187e8fa6916fb85a/Screenshot%202025-09-11%20182701.png" alt="AWS Certificate">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>AWS Cloud Practitioner Essentials</h3>
+                        <div class="certificate-info">
+                            <div class="certificate-issuer">
+                                <i class="fas fa-building"></i>
+                                <span>AWS Training and Certification</span>
+                            </div>
+                            <div class="certificate-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                        <div class="certificate-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <p class="certificate-click">Click to view certificate</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card" onclick="openCertificate('Web Development', 'Codsoft Virtual Internship', '2024', 'https://drive.google.com/file/d/18T6_Qi4k7HxhUGVaKGoEPTuCnY_duH35/view?usp=sharing')">
+                    <div class="certificate-image">
+                        <img src="https://drive.google.com/file/d/18T6_Qi4k7HxhUGVaKGoEPTuCnY_duH35/view?usp=sharing">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Web Development</h3>
+                        <div class="certificate-info">
+                            <div class="certificate-issuer">
+                                <i class="fas fa-building"></i>
+                                <span>Codsoft Virtual Internship</span>
+                            </div>
+                            <div class="certificate-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                        <div class="certificate-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <p class="certificate-click">Click to view certificate</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card" onclick="openCertificate('Java Foundations', 'Oracle Academy', '2024', 'https://1drv.ms/i/c/bcc846e82884ee32/EYqM_W-8wMNBkgdJeqgswf0Bq5d3OH3YQvCf2MKsFrgv4Q?e=iL0l8k')">
+                    <div class="certificate-image">
+                        <img src="https://1drv.ms/i/c/bcc846e82884ee32/EYqM_W-8wMNBkgdJeqgswf0Bq5d3OH3YQvCf2MKsFrgv4Q?e=iL0l8k">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Java Foundations</h3>
+                        <div class="certificate-info">
+                            <div class="certificate-issuer">
+                                <i class="fas fa-building"></i>
+                                <span>Oracle Academy</span>
+                            </div>
+                            <div class="certificate-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                        <div class="certificate-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <p class="certificate-click">Click to view certificate</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card" onclick="openCertificate('Data Structures And Algorithms', 'Infosys Springboard', '2024', 'images/Datastructures.png')">
+                    <div class="certificate-image">
+                        <img src="images/Datastructures.png" alt="Data Structures Certificate">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Data Structures And Algorithms</h3>
+                        <div class="certificate-info">
+                            <div class="certificate-issuer">
+                                <i class="fas fa-building"></i>
+                                <span>Infosys Springboard</span>
+                            </div>
+                            <div class="certificate-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                        <div class="certificate-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <p class="certificate-click">Click to view certificate</p>
+                    </div>
+                </div>
+                <div class="certificate-card" onclick="openCertificate('Basics Of Python', 'Infosys Springboard', '2023', 'images/Python.png')">
+                    <div class="certificate-image">
+                        <img src="images/Python.png" alt="Python Certificate">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Basics Of Python</h3>
+                        <div class="certificate-info">
+                            <div class="certificate-issuer">
+                                <i class="fas fa-building"></i>
+                                <span>Infosys Springboard</span>
+                            </div>
+                            <div class="certificate-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>2023</span>
+                            </div>
+                        </div>
+                        <div class="certificate-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <p class="certificate-click">Click to view certificate</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect" class="section connect-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Connect on Internet</h2>
+                <p class="section-subtitle">Let's connect and build something amazing together</p>
+            </div>
+            <div class="connect-grid">
+                <a href="https://www.linkedin.com/in/srinidhi-n-a185652a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="connect-card linkedin">
+                    <div class="connect-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Follow on LinkedIn</p>
+                </a>
+
+                <a href="https://github.com/srinidhi9353" target="_blank" class="connect-card github">
+                    <div class="connect-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Follow on GitHub</p>
+                </a>
+
+                <a href="https://www.instagram.com/srini__.21?igsh=MTlxc3BkYzc1YTUxZw==" target="_blank" class="connect-card instagram">
+                    <div class="connect-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Follow on Instagram</p>
+                </a>
+
+                <a href="https://wa.me/919353170957" target="_blank" class="connect-card whatsapp">
+                    <div class="connect-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Chat with me</p>
+                </a>
+
+                <a href="mailto:ssrinidhi622@gmail.com" class="connect-card email">
+                    <div class="connect-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Send me an email</p>
+                </a>
+               <a href="https://leetcode.com/xua0qxGkrF/" target="_blank" class="connect-card leetcode">
+    <div class="connect-icon">
+        <i class="fas fa-code"></i>
+    </div>
+    <h3>LeetCode</h3>
+    <p>Solve problems with me</p>
+</a>
+<a href="https://www.hackerrank.com/profile/ssrinidhi622" target="_blank" class="connect-card hackerrank">
+    <div class="connect-icon">
+        <i class="fab fa-hackerrank"></i>
+    </div>
+    <h3>HackerRank</h3>
+    <p>Practice coding with me</p>
+</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a project in mind or just want to chat? I'd love to hear from you!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always excited to work on new projects and collaborate with like-minded individuals. Whether you have a project idea, need technical consultation, or just want to say hello, feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ssrinidhi622@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9353170957</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Bengaluru (Open to remote opportunities)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or just say hello..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section resume-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resume</h2>
+                <p class="section-subtitle">Download my complete resume to learn more about my experience</p>
+            </div>
+            <div class="resume-content">
+                <div class="resume-card">
+                    <div class="resume-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>Srinidhi - Software Developer Resume</h3>
+                    <p>Comprehensive overview of my technical skills, work experience, education, and achievements in software development.</p>
+                    <div class="resume-buttons">
+                        <button class="btn btn-primary" onclick="downloadResume()">
+                            <i class="fas fa-download"></i> Download Resume (PDF)
+                        </button>
+                        <button class="btn btn-secondary" onclick="viewResume()">
+                            <i class="fas fa-eye"></i> Preview Resume
+                        </button>
+                    </div>
+                    <div class="resume-info">
+                        <p>Last updated: September 2025 • PDF Format • 1 page</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <button class="footer-brand" onclick="scrollToTop()">
+                    <h2 class="gradient-text">Srinidhi</h2>
+                </button>
+                <p class="footer-tagline">Software Development Engineer | Building the future, one line of code at a time</p>
+                <div class="footer-made-with">
+                    <span>Made with</span>
+                    <i class="fas fa-heart"></i>
+                    <span>and</span>
+                    <i class="fas fa-code"></i>
+                    <span>and lots of</span>
+                    <i class="fas fa-coffee"></i>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Srinidhi. All rights reserved.</p>
+                    <p>Crafted with modern web technologies and attention to detail.</p>
+                </div>
+                <div class="footer-quote">
+                    <p>"Code is poetry written in logic" ✨</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title"></h3>
+                <button class="modal-close" onclick="closeCertificate()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div class="modal-detail">
+                        <i class="fas fa-building"></i>
+                        <span id="modal-issuer"></span>
+                    </div>
+                    <div class="modal-detail">
+                        <i class="fas fa-calendar"></i>
+                        <span id="modal-date"></span>
+                    </div>
+                </div>
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
