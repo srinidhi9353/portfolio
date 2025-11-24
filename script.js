@@ -280,8 +280,8 @@ function downloadResume() {
     
     // Uncomment and modify the following lines for actual file download:
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1ktMFL5xCZYqWxlGnjMACZTEAfX6beZvo/view?usp=drivesdk';
-    link.download = 'My_Resume.pdf';
+    link.href = 'https://drive.google.com/file/d/1o8UvAmd1jDKETHYeIJyFciI1ruHBM0Af/view?usp=drive_link';
+    link.download = 'Srinidhi_Resume.pdf';
     link.click();
 }
 
@@ -291,7 +291,7 @@ function viewResume() {
     showNotification('Opening resume preview... (Demo - replace with actual file)', 'info');
     
     // Uncomment and modify the following line for actual file preview:
-    window.open('https://drive.google.com/file/d/1ktMFL5xCZYqWxlGnjMACZTEAfX6beZvo/view?usp=drivesdk', '_blank');
+    window.open('https://drive.google.com/file/d/1o8UvAmd1jDKETHYeIJyFciI1ruHBM0Af/view?usp=drive_link', '_blank');
 }
 
 // Utility Functions
