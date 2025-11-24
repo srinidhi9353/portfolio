@@ -185,16 +185,25 @@ contactForm.addEventListener('submit', async (e) => {
     };
     
     try {
-        // Simulate form submission (replace with actual backend endpoint)
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        // Create mailto link with form data
+        const subject = encodeURIComponent(`Portfolio Contact from ${data.name}`);
+        const body = encodeURIComponent(`Name: ${data.name}
+Email: ${data.email}
+
+Message:
+${data.message}`);
+        const mailtoLink = `mailto:ssrinidhi622@gmail.com?subject=${subject}&body=${body}`;
+        
+        // Open default email client
+        window.location.href = mailtoLink;
         
         // Show success message
-        showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+        showNotification('Opening your email client to send the message!', 'success');
         contactForm.reset();
         
     } catch (error) {
         // Show error message
-        showNotification('Failed to send message. Please try again.', 'error');
+        showNotification('Failed to open email client. Please try again or use the direct email link.', 'error');
     } finally {
         // Reset button
         submitBtn.innerHTML = originalText;
