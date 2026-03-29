@@ -126,18 +126,27 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Certificate Modal Functionality
-function openCertificate(name, issuer, date, image) {
+function openCertificate(name, issuer, date, image, description = "") {
     const modal = document.getElementById('certificate-modal');
     const modalTitle = document.getElementById('modal-title');
     const modalIssuer = document.getElementById('modal-issuer');
     const modalDate = document.getElementById('modal-date');
     const modalImg = document.getElementById('modal-img');
+    const modalDesc = document.getElementById('modal-description');
     
     modalTitle.textContent = name;
     modalIssuer.textContent = issuer;
     modalDate.textContent = date;
     modalImg.src = image;
     modalImg.alt = name;
+    
+    if (description) {
+        modalDesc.textContent = description;
+        modalDesc.style.display = 'block';
+    } else {
+        modalDesc.textContent = "";
+        modalDesc.style.display = 'none';
+    }
     
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
