@@ -300,7 +300,7 @@ function viewResume() {
     showNotification('Opening resume preview... (Demo - replace with actual file)', 'info');
     
     // Uncomment and modify the following line for actual file preview:
-    window.open('https://drive.google.com/file/d/1vCuu34g7GS1zbnpSrl3_UM8kPbTlFCl_/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1d6Tj4oGAztSPBvPOFIu9nlXFRuElOCW3/view?usp=sharing', '_blank');
 }
 
 // Utility Functions
