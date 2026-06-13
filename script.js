@@ -289,7 +289,7 @@ function downloadResume() {
     
     // Uncomment and modify the following lines for actual file download:
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1vCuu34g7GS1zbnpSrl3_UM8kPbTlFCl_/view?usp=sharing';
+    link.href = 'https://drive.google.com/file/d/1d6Tj4oGAztSPBvPOFIu9nlXFRuElOCW3/view?usp=sharing';
     link.download = 'Srinidhi_Resume.pdf';
     link.click();
 }
