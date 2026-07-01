@@ -1,32 +1,66 @@
-# React + TypeScript + Vite
+# Srinidhi - Creative Engineering Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A premium, modern, creative engineering portfolio website designed to showcase projects, internships, and certifications with a focus on visual storytelling, spacing, and micro-interactions.
 
-Currently, two official plugins are available:
+Inspired by design-forward startup aesthetics like Framer, Linear, Apple, and Awwwards.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Site
+Check out the live website deployed on GitHub Pages:
+👉 **[https://srinidhi9353.github.io/portfolio/](https://srinidhi9353.github.io/portfolio/)**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technology Stack
+- **Framework**: React 19 + TypeScript
+- **Bundler**: Vite 8
+- **Styling**: Tailwind CSS v4 (using native `@tailwindcss/vite` configuration)
+- **Animations**: Framer Motion
+- **Scroll Engine**: Lenis (for inertia smooth scrolling)
+- **Icons**: Lucide React
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## ✨ Features
+1. **Cinematic Hero**: Left-aligned headline layout, clean metadata tags (Patent Published, MERN Developer, Open to Opportunities), social channels integration, and a responsive grayscale portrait layout with subtle interactive hover effects.
+2. **Immersive Case-Studies**: Replaced typical card-heavy grid structures with large showcase slots displaying actual projects (ALGOVIZ, Complete The Word, Purchase Path Analyzer, Wispr Flow Clone, and TaskNova) inside dark mockup plates.
+3. **Internships & Education**: Minimal editorial timeline detailing experiences at SuprMentr Technologies and CodSoft, alongside B.E. CSE academic milestones at East Point College of Engineering and Technology.
+4. **Interactive Credentials Gallery**: Integrates 9 certifications and patent credentials. Clicking any credential card launches a blurred-backdrop lightbox popup modal showing the verified image. Includes ESC key keyboard closing accessibility.
+5. **Contact Redirection**: Built a subject-enabled form that validates visitor input and dynamically pre-composes a Gmail compose URL in a new tab.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+---
+
+## 💻 Local Development
+
+### 1. Install Dependencies
+```bash
+npm install
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### 2. Start Development Server
+```bash
+npm run dev
+```
+Open **[http://localhost:5173/](http://localhost:5173/)** to preview the site locally with Hot Module Replacement (HMR).
+
+### 3. Production Build
+```bash
+npm run build
+```
+Compiles and outputs production-ready assets directly into the **`docs/`** directory.
+
+---
+
+## 🌐 Deploy to GitHub Pages
+The project is configured to compile directly into the `/docs` directory to support GitHub Pages out of the box.
+
+1. Commit and push the changes:
+   ```bash
+   git add .
+   git commit -m "docs: Update portfolio documentation"
+   git push origin master
+   ```
+2. Go to your repository settings on GitHub.
+3. Select **Pages** on the left sidebar.
+4. Set the **Source** to `Deploy from a branch`.
+5. Under **Branch**, select `master` (or `main`) and change the folder from `/ (root)` to **`/docs`**.
+6. Click **Save**.
