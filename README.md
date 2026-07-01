@@ -1,53 +1,32 @@
-# Portfolio Website
+# React + TypeScript + Vite
 
-A responsive portfolio website showcasing projects, skills, and experience.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Features
-- Responsive design that works on all devices
-- Dark/light theme toggle
-- Project showcase with live demos and source code links
-- Skills section with technology icons
-- Certificates section with modal viewer
-- Contact form
-- Social media links
+Currently, two official plugins are available:
 
-## Setup Instructions
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-### For Local Development
-1. Clone the repository
-2. Open `index.html` in your browser
+## React Compiler
 
-### For GitHub Pages Hosting
-1. Place your images in the `images` folder:
-   - Profile photo named `profile.jpg`
-   - Data Structures certificate named `Datastructures.png`
-   - Python certificate named `Python.png`
-2. Commit and push all files to your GitHub repository
-3. Go to your repository Settings > Pages
-4. Select "Deploy from a branch" and choose your main branch with `/ (root)` folder
-5. Click "Save" - your site will be published at `https://[your-username].github.io/[repository-name]/`
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Customization
-- Update personal information in `index.html`
-- Replace profile image in `images/profile.jpg`
-- Modify styles in `styles.css`
-- Update functionality in `script.js`
+## Expanding the Oxlint configuration
 
-## Project Structure
-```
-portfolio/
-├── index.html          # Main HTML file
-├── styles.css          # Custom styles
-├── script.js           # JavaScript functionality
-├── images/             # Image assets
-│   ├── profile.jpg     # Your profile photo
-│   ├── Datastructures.png # Data Structures certificate
-│   ├── Python.png      # Python certificate
-│   └── README.md       # Image folder instructions
-└── README.md           # This file
+If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript", "oxc"],
+  "options": {
+    "typeAware": true
+  },
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+  }
+}
 ```
 
-## Notes
-- All external images (project thumbnails) are loaded from CDN URLs
-- The profile image must be added locally for GitHub Pages hosting
-- The contact form requires backend implementation for functionality
+See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
